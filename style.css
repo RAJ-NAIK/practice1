@@ -1,0 +1,167 @@
+@import url('https://fonts.cdnfonts.com/css/cocon');
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+  --font1:sans-serif;
+  --font2:'Cocon';
+}
+h2,h3{
+  padding:0.5em 0 0.5em 0;
+  text-shadow: 0.3em  0.3em  0.3em rgb(184, 175, 175); 
+}
+h3{
+  font-weight:lighter 65%;
+}
+p{
+  font-weight: 60%;
+}
+body{
+  background-color: #FFDEE9;
+/* background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); */
+background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+font-family: var(--font1,--font2);
+}
+
+
+
+.container{
+  width: 100vw;
+  overflow-x:none; 
+}
+
+/* navigation bar css start */
+.navigation-container{
+  width:100vw;
+  height:4em;
+  /* background-color:#ebb1e1b9; */
+  background-image: linear-gradient(120deg, #caec9e 0%, #cef896 100%);
+  filter: blur(0.02em);
+  box-shadow: 0 0.3em  1em rgb(158, 200, 207);
+  /* border: 1px  solid rgb(148, 199, 114) ; */
+  border-bottom-left-radius:2em;
+  border-bottom-right-radius: 2em;
+ 
+}
+
+.navigation-list{
+  list-style:none;
+  font-family: var(--font1);
+  font-weight: 200;
+  font-style:normal;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-shadow:  0.3em 0 0.3em orange,-0.3em -0.3em 0.3 orange;
+  
+}
+
+.navigation-list li div a{
+  text-decoration: none;
+  color: #36174b;
+  padding-right:3em; 
+}
+
+.nav-list-left{
+  font-family: var(--font2,--font1);
+  font-size: 1.6em;
+  font-weight:700;
+  color: #FF8C00;
+  margin: 0.5em 0 0 1em;
+}
+
+.nav-list-right{
+ margin: 1.2em 1.2em 0 0;
+}
+/* navigation bar css end */
+
+
+/* main content start */
+.content-box{
+  width: 70%;
+  margin: auto;
+  border: 1px solid rgb(218, 224, 215);
+  box-shadow: 2em 0 2em #E9E4F0,-2em 0 2em #E9E4F0;
+  
+}
+
+.item{
+  width:100%;
+  height: 25rem;
+  margin-top:0.5em;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(94, 87, 87);
+  box-shadow: 0 0.2em 0.5em rgb(83, 81, 81);
+  border-radius: 0.5em;
+  /* box-shadow: 0 1em 0.9em rgb(29, 28, 28); */
+}
+
+
+.left-item{
+  margin:2em;
+  height: 80%;
+  width: 60%;
+  font-size: 1em;
+  
+}
+.right-item{
+  margin:2em;
+  height:20em;
+  width: 25em;
+  overflow: hidden;  
+  border: 1px solid rgb(95, 91, 91);
+  border-radius: 1.5em;
+}
+.right-item-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  
+}
+/* main content end  */
+
+
+
+
+/* footer css start */
+.footer-container{
+  padding: 0.5em;
+  background-image: linear-gradient(120deg, #caec9e 0%, #cef896 100%);
+  width: 100%;
+  height: 4.5em;
+  display: flex;
+  flex-direction: column;                                                        ;
+  align-items: center;
+  gap: 0.5em;
+  border-radius: 1.5em  0 1.5em 0;
+  box-shadow: 0 0.5em 0.5em  rgb(235, 235, 213);
+  
+}
+
+.contact-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+  padding-top:0.5em ;
+}
+
+.contact-item li{
+  list-style: none;
+  
+}
+.contact-item a img{
+  width: 1.5em;
+  height: 1.5em;
+  
+}
+
+.company-copyright{
+  font-size: 0.9em;
+  
+}
+/* footer css ends */
