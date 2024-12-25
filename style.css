@@ -60,6 +60,7 @@ body {
 .content-box {
     width: 70%;
     margin: auto;
+    min-height:100vh;
     border: 0.1em solid rgb(218, 224, 215);
     box-shadow: 2em 0 2em #515053, -2em 0 2em #38363b;
 }
