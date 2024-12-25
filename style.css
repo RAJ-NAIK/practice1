@@ -8,16 +8,6 @@
     --font1: sans-serif;
     --font2: 'Cocon';
 }
-h2, h3 {
-    padding: 0.5em 0;
-    text-shadow: 0.3em 0.3em 0.3em rgb(184, 175, 175);
-}
-h3 {
-    font-weight: 300;
-}
-p {
-    font-weight: 300;
-}
 body {
     background: #e2e5e9;
     font-family: var(--font1, var(--font2));
@@ -27,12 +17,14 @@ body {
     width: 100vw;
     overflow-x: hidden;
 }
+/* navigation start */
 .navigation-container {
     width: 100%;
-    height: 4em;
-    background-image: linear-gradient(120deg, #caec9e 0%, #cef896 100%);
+    height: 5em;
+    background-image: linear-gradient(to left, #e4d6aa 0%, #cee7a5 100%);
+    /* background-image: linear-gradient(120deg, #caec9e 0%, #cef896 100%); */
     filter: blur(0.02em);
-    box-shadow: 0 0.3em 1em rgb(158, 200, 207);
+    box-shadow: 0 1em 1em rgb(158, 200, 207);
     border-bottom-left-radius: 2em;
     border-bottom-right-radius: 2em;
 }
@@ -41,11 +33,11 @@ body {
     font-family: var(--font1);
     font-weight: 200;
     font-style: normal;
-    font-size: 1.25em;
+    font-size: 28px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    text-shadow: 0.3em 0 0.3em rgb(211, 204, 192), -0.3em -0.3em 0.3em rgb(216, 209, 197);
+    /* text-shadow: 0.3em 0 0.2em rgb(70, 68, 66), -0.3em -0.3em 0.2em rgb(46, 45, 44); */
 }
 .navigation-list li div a {
     text-decoration: none;
@@ -56,38 +48,42 @@ body {
     font-family: var(--font2, var(--font1));
     font-size: 1.6em;
     font-weight: 700;
-    color: #FF8C00;
+    color: #251e24;
     margin: 0.5em 0 0 1em;
 }
 .nav-list-right {
     margin: 1.2em 1.2em 0 0;
 }
+/* navigation bar end */
+
+/* main content start  */
 .content-box {
     width: 70%;
     margin: auto;
     border: 0.1em solid rgb(218, 224, 215);
-    box-shadow: 2em 0 2em #E9E4F0, -2em 0 2em #E9E4F0;
+    box-shadow: 2em 0 2em #515053, -2em 0 2em #38363b;
 }
 .item {
     width: 100%;
-    height: 25em;
+    height: 600px;
     margin-top: 0.5em;
+    background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
     display: flex;
     justify-content: space-around;
-    border-bottom: 0.1em solid rgb(94, 87, 87);
-    box-shadow: 0 0.2em 0.5em rgb(83, 81, 81);
+    border-bottom: 0.1em solid rgb(58, 53, 53);
+    box-shadow: 0 0.9em 1em rgb(99, 96, 96);
     border-radius: 0.5em;
 }
 .left-item {
     margin: 2em;
-    height: 80%;
+    height: 85%;
     width: 60%;
     font-size: 1em;
 }
 .right-item {
     margin: 2em;
-    height: 20em;
-    width: 25em;
+    height: 85%;
+    width: 40%;
     overflow: hidden;
     border: 0.1em solid rgb(95, 91, 91);
     border-radius: 1.5em;
@@ -97,11 +93,45 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+.left-item h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:30px;
+  font-weight: 700;
+  margin:0.5em 1.5em 1.5em 1.5em;
+  border: 1px solid rgb(54, 54, 59);
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 15px 0 15px 0;
+  text-align: center;
+}
+
+.item-ingredients h3,
+.item-recipe h3{
+  font-size: 25px;
+  font-weight: 500;
+  margin:10px 0px 10px 20px;
+  /* margin-bottom:10px; */
+
+}
+.item-ingredients ul,
+.item-recipe ul {
+  padding-left:50px;
+  font-size: 18px;
+  font-weight: 300;
+  /* list-style: none; */
+  margin-bottom: 3px;
+}
+/* main content end  */
+
+/* footer start  */
 .footer-container {
     padding: 0.5em;
-    background-image: linear-gradient(120deg, #caec9e 0%, #cef896 100%);
+    /* background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%); */
+    background-image: linear-gradient(to left, #e4d6aa 0%, #cee7a5 100%);
+
     width: 100%;
-    height: 4.5em;
+    height: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,24 +156,5 @@ body {
 .company-copyright {
     font-size: 0.9em;
 }
+/* footer end */
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .content-box {
-        width: 90%;
-    }
-    .item {
-        flex-direction: column;
-    }
-    .left-item, .right-item {
-        width: 100%;
-        margin: 1em 0;
-    }
-    .navigation-list {
-        flex-direction: column;
-        align-items: center;
-    }
-    .navigation-list li div a {
-        padding-right: 1em;
-    }
-}
